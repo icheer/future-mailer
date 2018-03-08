@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Menu from '@/pages/menu/menu'
-import Random from '@/pages/random/random'
-import Bbs from '@/pages/bbs/bbs'
-import Post from '@/pages/bbs/post'
-import Input from '@/pages/bbs/input'
+
+import Index from '@/pages/index/index'
+import Public from '@/pages/public/public'
+// import Random from '@/pages/random/random'
+// import Bbs from '@/pages/bbs/bbs'
+// import Post from '@/pages/bbs/post'
+// import Input from '@/pages/bbs/input'
 // import Wish from '@/pages/wish/wish'
 // import Help from '@/pages/help/help'
 // import Card from '@/pages/card/card'
@@ -16,23 +18,11 @@ export default new Router({
 		{
 			path: '/',
 			name: '首页',
-			component: Menu
+			component: Index
 		},{
-			path: '/random',
-			name: '偶遇',
-			component: Random
-		},{
-			path: '/bbs',
-			name: '树洞',
-			component: Bbs
-		},{
-			path: '/post',
-			name: '帖子',
-			component: Post
-		},{
-			path: '/input',
-			name: '发串',
-			component: Input
+			path: '/public',
+			name: '公开',
+			component: Public
 		}
 	]
 })

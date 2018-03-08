@@ -3,10 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import { Loadmore } from 'mint-ui';
-Vue.component(Loadmore.name, Loadmore);
-// import VueAwesomeSwiper from 'vue-awesome-swiper'
-// Vue.use(VueAwesomeSwiper)
+// import { Loadmore } from 'mint-ui';
+// Vue.component(Loadmore.name, Loadmore);
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
 import './ui/ui-init.js'
 import './util/tool'
 
